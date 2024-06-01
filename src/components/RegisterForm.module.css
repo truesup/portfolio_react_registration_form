@@ -1,0 +1,125 @@
+.regForm {
+  margin: 8% auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.3);
+}
+.regForm p {
+  font-size: 24px;
+  margin-block: 12px;
+}
+.regForm hr {
+  width: 100%;
+  border: none;
+  height: 2px;
+  background-color: #e0e0e0;
+  margin-bottom: 4px;
+}
+.regForm label {
+  display: block;
+  font-size: 14px;
+  margin-top: 14px;
+}
+.regForm input {
+  display: block;
+  width: 300px;
+  min-height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 3px 15px;
+  font-size: 16px;
+}
+.regForm input:active,
+.regForm input:focus,
+.regForm input:hover {
+  outline: none;
+  outline-offset: none;
+}
+.regForm button {
+  height: 45px;
+  min-width: 320px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: hsl(0, 99%, 61%);
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.regForm button:hover {
+  background-color: hsl(0, 99%, 55%);
+}
+.error {
+  font-size: 12px;
+  max-width: 300px;
+  margin-top: 0;
+  color: hsl(0, 99%, 61%);
+}
+.loader {
+  margin: 29px;
+  width: 30px;
+  aspect-ratio: 1;
+  display: grid;
+  -webkit-mask: conic-gradient(from 15deg, #0000, #000);
+  animation: l26 1s infinite steps(12);
+}
+.loader,
+.loader:before,
+.loader:after {
+  background: radial-gradient(closest-side at 50% 12.5%, #f03355 96%, #0000) 50%
+      0/20% 80% repeat-y,
+    radial-gradient(closest-side at 12.5% 50%, #f03355 96%, #0000) 0 50%/80% 20%
+      repeat-x;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  grid-area: 1/1;
+  transform: rotate(30deg);
+}
+.loader:after {
+  transform: rotate(60deg);
+}
+
+@keyframes l26 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.succesMessage {
+  margin: 8% auto;
+  max-width: 400px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.3);
+  font-size: 22px;
+  color: hsl(0, 99%, 61%);
+}
+.errorMessage {
+  margin: 8% auto;
+  max-width: 400px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.3);
+  font-size: 22px;
+  color: hsl(0, 99%, 61%);
+}
