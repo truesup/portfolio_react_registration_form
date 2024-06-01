@@ -1,1 +1,1 @@
-# Registration form using react project
+# Registration form using React
